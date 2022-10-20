@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Extracting classes with @apply */
+
+@layer components {
+  .classname {
+    @apply all-classes-here;
+  }
+}
