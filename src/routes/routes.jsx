@@ -7,14 +7,13 @@ import Register from '../components/Register'
 import Profile from '../components/Profile'
 import Wallet from '../components/Wallet'
 import Error from '../components/Error'
-import UserContext from '../contexts/UserContext'
 import PrivateRoute from './PrivateRoute'
 
 export const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <Error />,
-    element: <UserContext><Main /></UserContext>,
+    element: <Main />,
     children: [
       {
         path: '/',
